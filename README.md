@@ -2,7 +2,7 @@
 
 🛵 Automatically export the relevant information of the project after the build, such as git branch, build time, etc.
 
-[![npm version](https://badge.fury.io/js/@vitue%2Fexport-build-info.svg)](https://badge.fury.io/js/@vitue%2Fexport-build-info) [![Test](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml/badge.svg)](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml)
+[![Test](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml/badge.svg)](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml)
 ## 动机
 
 1. 如果项目会被部署到多个的客户环境，而你可能不知道；
