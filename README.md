@@ -2,8 +2,7 @@
 
 🛵 Automatically export the relevant information of the project after the build, such as git branch, build time, etc.
 
-[![npm version](https://badge.fury.io/js/@w6s%2Fexport-build-info.svg)](https://badge.fury.io/js/@w6s%2Fexport-build-info) [![Test](https://github.com/WorkPlusFE/vite-plugin-export-build-info/actions/workflows/test.yml/badge.svg)](https://github.com/WorkPlusFE/vite-plugin-export-build-info/actions/workflows/test.yml)
-
+[![npm version](https://badge.fury.io/js/@vitue%2Fexport-build-info.svg)](https://badge.fury.io/js/@vitue%2Fexport-build-info) [![Test](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml/badge.svg)](https://github.com/vitue-scaffold/vite-plugin-export-build-info/actions/workflows/test.yml)
 ## 动机
 
 1. 如果项目会被部署到多个的客户环境，而你可能不知道；
@@ -22,17 +21,17 @@
 > 需要 Vite@2+ 版本。
 
 ```bash
-yarn add @w6s/export-build-info -D
+yarn add @vitue/export-build-info -D
 
 # npm
-npm install --save-dev @w6s/export-build-info
+npm install --save-dev @vitue/export-build-info
 ```
 
 ## 使用
 
 ```js
 // vite.config.ts/.js
-import { ExportBuildInfo } from '@w6s/export-build-info'
+import { ExportBuildInfo } from '@vitue/export-build-info'
 
 export default defineConfig({
   plugins: [
