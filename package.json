@@ -1,5 +1,5 @@
 {
-  "name": "@w6s/export-build-info",
+  "name": "@vitue/export-build-info",
   "description": "Automatically export the relevant information of the project after the build, such as git branch, build time, etc.",
   "version": "1.0.0-beta.1",
   "main": "dist/index.js",
