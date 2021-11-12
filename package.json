@@ -8,6 +8,7 @@
       "import": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
   "publishConfig": {
     "access": "public"
   },
