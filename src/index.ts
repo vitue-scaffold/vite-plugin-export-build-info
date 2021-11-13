@@ -6,7 +6,7 @@ import { format } from 'date-fns';
 import chalk from 'chalk';
 import { getGitUserInfo } from './git-user';
 
-const name = '@w6s/export-build-info';
+const name = '@vitue/export-build-info';
 const logInfo = (info: string) => console.log(`${chalk.blue(name)}`, chalk.green(info));
 const logError = (info: string, err: Error) => console.log(`${chalk.blue(name)}`, chalk.red(info), err);
 
