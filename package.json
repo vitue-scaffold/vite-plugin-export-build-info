@@ -2,13 +2,7 @@
   "name": "@vitue/export-build-info",
   "description": "Automatically export the relevant information of the project after the build, such as git branch, build time, etc.",
   "version": "1.0.0-beta.3",
-  "type": "module",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js"
-    }
-  },
-  "main": "./dist/index.js",
+  "main": "dist/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -16,9 +10,10 @@
     "dist"
   ],
   "scripts": {
+    "clean": "rimraf dist",
+    "plugin:dev": "tsup src/index.ts --dts --format cjs,esm --watch",
+    "plugin:build": "npm run clean && tsup src/index.ts --dts --format cjs,esm",
     "build": "npm run plugin:build && npm run example:build",
-    "plugin:dev": "tsc -p . --watch",
-    "plugin:build": "tsc -p .",
     "example:build": "cd example && npm run build",
     "example:postinstall": "cd example && npm install",
     "release": "script/release.sh"
@@ -37,7 +32,9 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
-    "typescript": "^4.5.0-beta"
+    "rimraf": "^3.0.2",
+    "tsup": "^5.7.0",
+    "typescript": "^4.2.4"
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
