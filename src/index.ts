@@ -63,12 +63,12 @@ export const ExportBuildInfo = (options?: IExportBuildInfo): Plugin => {
     },
 
     closeBundle() {
-      const output = path.join(config.root, config.build.outDir, fileName);
+      const output = path.resolve(config.root, config.build.outDir);
 
       createOutDirPathIfNotExist(output);
 
       const info = getGitInfo(options?.extend);
-      writeFile(output, obj2string(info), (err) => {
+      writeFile(path.join(output, fileName), obj2string(info), (err) => {
         if (err) return logError('Failed!', err);
         logInfo(`Successfully exported '${fileName}'.`);
       });
